@@ -1,1 +1,32 @@
+# Unreal Engine specific content (optimized for WSL)
+*.uasset filter=lfs diff=lfs merge=lfs -text
+*.umap filter=lfs diff=lfs merge=lfs -text
+
+# Unreal Engine Content folder (optimized for WSL with LFS)
 Content/** filter=lfs diff=lfs merge=lfs -text
+
+# Source code and text files (with explicit line endings)
+*.cpp text eol=lf
+*.h text eol=lf
+*.ini text eol=lf
+*.uproject text eol=lf
+*.txt text eol=lf
+* text=auto
+
+# Media and assets (optimized for WSL with LFS)
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.wav filter=lfs diff=lfs merge=lfs -text
+*.mp3 filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.fbx filter=lfs diff=lfs merge=lfs -text
+*.obj filter=lfs diff=lfs merge=lfs -text
+
+# Script files (with explicit line endings)
+*.sh text eol=lf
+*.bat text eol=crlf
+
+# Miscellaneous files (optimized for WSL with LFS)
+*.json text eol=lf
+*.xml text eol=lf
+*.cs text eol=lf  # Removed inline comment
